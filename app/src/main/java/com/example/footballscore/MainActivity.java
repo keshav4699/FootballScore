@@ -23,47 +23,47 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void goal_scoredA(View view) {
         goalA+=1;
-        TextView content = (TextView)findViewById(R.id.tv_goalA);
+        TextView content = findViewById(R.id.tv_goalA);
         content.setText(goalA.toString());
     }
 
     @SuppressLint("SetTextI18n")
     public void goal_scoredB(View view) {
         goalB+=1;
-        TextView content = (TextView)findViewById(R.id.tv_goalB);
+        TextView content = findViewById(R.id.tv_goalB);
         content.setText(goalB.toString());
     }
 
     @SuppressLint("SetTextI18n")
     public void foul_countA(View view) {
         foulA+=1;
-        TextView content = (TextView)findViewById(R.id.tv_foulcountA);
+        TextView content = findViewById(R.id.tv_foulcountA);
         content.setText(foulA.toString());
     }
 
     @SuppressLint("SetTextI18n")
     public void foul_countB(View view) {
         foulB+=1;
-        TextView content = (TextView)findViewById(R.id.tv_foulcountB);
+        TextView content = findViewById(R.id.tv_foulcountB);
         content.setText(foulB.toString());
     }
 
     @SuppressLint("SetTextI18n")
     public void reset(View view) {
         goalA=0;
-        TextView content = (TextView)findViewById(R.id.tv_goalA);
+        TextView content = findViewById(R.id.tv_goalA);
         content.setText(goalA.toString());
 
         goalB=0;
-        content = (TextView)findViewById(R.id.tv_goalB);
+        content = findViewById(R.id.tv_goalB);
         content.setText(goalB.toString());
 
         foulA=0;
-        content = (TextView)findViewById(R.id.tv_foulcountA);
+        content = findViewById(R.id.tv_foulcountA);
         content.setText(foulA.toString());
 
         foulB=0;
-        content = (TextView)findViewById(R.id.tv_foulcountB);
+        content = findViewById(R.id.tv_foulcountB);
         content.setText(foulB.toString());
     }
 }
